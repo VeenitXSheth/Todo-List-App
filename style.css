@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #FC5C7D, #6A82FB);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.content {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 69px;
+  margin-bottom: 50px;
+  text-shadow: 25px 25px 25px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background: white;
+  padding: 10px 25px 10px;
+  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input {
+  background: white;
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.1);
+  padding: 12.5px 100px 12.5px;
+  text-align: center;
+}
+
+button {
+  background: black;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 700;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; 
+  border: none;
+  padding: 0px 15px 0px;
+  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.1);
+  transition: padding 0.3s ease,
+    opacity 0.3s ease;
+}
+
+button:hover {
+  padding: 5px 20px 5px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.deleteTask {
+  background-color: #ff5051;
+  color: white;
+  padding: 8px 11px 8px;
+  border-radius: 10px;
+  opacity: 0.85;
+  font-size: 10px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease,
+    padding 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.deleteTask:hover {
+  background-color: red; 
+  padding: 10px 12.5px 10px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.deleteTask:active {
+  opacity: 0.69;
+}
